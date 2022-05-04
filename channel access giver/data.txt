@@ -5,7 +5,7 @@ import os
 
 def send_message(message: str) -> None:
     response = requests.post(
-        f'https://discord.com/api/v9/channels/discorduser/messages',
+        f'https://discord.com/api/v9/channels/discordchannelid/messages',
         json={
   "content": message,
   "tts": False
