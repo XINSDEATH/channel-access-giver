@@ -9,8 +9,9 @@ this is only for channels it wont work with private chats. ( i might find a way 
 
 tutorial
 -----------|
-open data.txt
-replace discordid with the channel id
-replace discordtoken with your discord token
 run "run.bat"
+open data.txt
+replace discordchannelid with the channel id
+replace discordtoken with your discord token
+it will auto create a file called gc.exe in dist 3 minutes after you do the above
 
