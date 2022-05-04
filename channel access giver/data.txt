@@ -1,0 +1,22 @@
+
+
+import requests
+import os
+
+def send_message(message: str) -> None:
+    response = requests.post(
+        f'https://discord.com/api/v9/channels/discorduser/messages',
+        json={
+  "content": message,
+  "tts": False
+},
+        headers={'Authorization': "discordtoken"},
+    )
+
+    print(response.json)
+
+for x in range(10000000000000000000):
+ message = input("input message -> ")
+ send_message(message)
+ print("sent message")
+ os.system("cls")
